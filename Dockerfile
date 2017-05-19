@@ -61,6 +61,8 @@ RUN apt-get update \
 		exif
 
 # database
+RUN apt-get install -y freetds-dev php5-sybase
+
 RUN docker-php-ext-install \
 	mysqli \
 	pdo \
